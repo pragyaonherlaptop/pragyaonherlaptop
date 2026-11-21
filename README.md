@@ -4,7 +4,7 @@
 
 <br><br>
 
-<img src="assets/divider.svg" alt="" width="190">
+<img src="assets/divider.png" alt="" width="190">
 
 # hi! i'm Pragya Punia𖡼
 
