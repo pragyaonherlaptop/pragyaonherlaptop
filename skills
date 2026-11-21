@@ -1,0 +1,39 @@
+
+{
+  "groups": [
+    {
+      "name": "Languages",
+      "color": "#79b8ff",
+      "skills": [
+        "C/C++",
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Web & Data",
+      "color": "#7ee787",
+      "skills": [
+        "React",
+        "HTML5",
+        "CSS3",
+        "MySQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Tools & Creative",
+      "color": "#ffa657",
+      "skills": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Figma",
+        "Drawing",
+        "Creative Writing"
+      ]
+    }
+  ]
+}
