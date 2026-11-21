@@ -1,16 +1,97 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**pragyaonherlaptop/pragyaonherlaptop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img src="assets/nebula.jpg" alt="Deep-space nebula in teal and black with bright blue stars" width="100%">
 
-Here are some ideas to get you started:
+<br><br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<img src="assets/divider.svg" alt="" width="190">
+
+# hi! i'm Pragya Punia𖡼
+
+<sub>[⋆⋆i be sleeping or eating or coding or creating⋆⋆ ]</sub>
+
+</div>
+
+<br>
+
+## 01 · About me
+
+i am currently pursuing a B.Tech in computer science and engineering. iam interested in how technology translates into real-world products, businesses, and solutions and have been also exploring product development, growth strategy, partnerships, and community building. 
+in short, iam a programmer with a fascination for how computers work. if you want to see what goes on in my pastime, please check my recent repositories. 
+i'm particularly interested in opportunities across technology, product, growth, developer relations, and early-stage startups.
+
+ 
+
+<br>
+
+## 02 · my repo galaxy
+
+<img src="assets/galaxy.svg?v=20260101" alt="My repositories drawn as planets. Bigger planets have more commits, colors follow the main language." width="100%">
+
+<sub>planet size = commits this year · color = main language · little stars = commits · rebuilt every night</sub>
+
+<!-- PLANETS:START -->
+<!-- PLANETS:END -->
+
+<br>
+
+## 03 · tech stack
+
+<img src="assets/stack.svg?v=20260101" alt="My skills drawn as three constellations: frontend, backend and tools." width="100%">
+
+<br>
+
+<div align="center">
+
+<img src="assets/divider.svg" alt="" width="190">
+
+**thanks for visiting** ✦
+<div align="center">
+
+<pre>
+⠀⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠁⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠂⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠄⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⢴⡅⡠⠿⠶⢶⡶⠆⠀⠀⠀⠰⢾⡶⠶⠿⢤⢸⡧⢄⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀
+⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡹⠋⢣⡦⢄⠀⠁⠀⠀⠀⠀⠀⠀⠁⢠⣄⡦⠙⢯⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⢀⠀⠀⠀⠀⠀⢠⣎⢱⠖⢻⢀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡀⡜⠲⠮⢱⡄⠀⠀⠀⠀⠀⡀⡠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣉⢫⡴⢤⢔⢠⣠⠋⠙⠊⠀⠘⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠃⠀⠑⠋⠘⡆⡤⠂⢄⢶⡹⣏⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀
+⠀⠂⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠁⢻⢧⣇⠘⣭⣧⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠴⣄⠀⠀⠀⠀⠀⢠⣼⣌⠇⡸⡴⡙⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⣱⡳⡅⡟⠥⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⢀⡌⠀⠛⡂⠀⠀⠁⠀⠰⠮⢻⡈⣿⣊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⡇⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠸⡇⠰⡇⠀⠀⠀⠀⠀⠀⠈⣿⢸⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢠⠶⠀⢉⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⡀⠀⠀⠐⡇⠀⠀⠀⠀⠀⠀⠀⢸⡉⠀⢰⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠁⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⢀⢽⡁⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠉⠁⣰⡄⠀⠸⡂⠀⠀⠀⠀⠀⠀⠀⣇⠀⢈⡯⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠁⢱⠀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠒⠒⠊⢹⣾⡀⠀⡇⠀⠀⠀⠀⠀⠀⠀⢹⠀⡌⠈⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠐⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠈⡆⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⢀⣀⣤⢾⠏⠁⠀⢸⠀⠀⠀⠀⠀⠀⠀⢸⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⢀⢹⡇⠀⠀⠀⠀⠀⠀⢀⣴⣾⣴⣩⡂⠀⠍⡉⠁⠁⡀⠀⠀⣀⡜⠀⠀⠀⠀⠀⠀⠀⢸⡏⡄⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢋⢤⢱⡀⠘⣼⡃⢀⡄⠀⠀⠀⣀⠯⠠⢮⠀⢴⣯⡁⠐⠋⠀⠀⠁⠀⠀⢸⠁⠀⠀⠀⠀⠀⢠⣀⠈⣧⠃⢀⡎⣵⡜⡆⠀⠀⠀⠀⠀⠀⠠⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢆⡸⠸⡇⠀⢸⣀⡿⠁⠀⠀⠀⠀⡀⣶⣾⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠰⢰⡀⠀⠀⠀⠀⠀⠀⣿⣀⡇⠀⢸⡷⠏⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⠇⠀⢸⠥⣆⠇⠀⠀⠀⠀⢱⡄⢸⡮⠀⠀⠀⣠⣄⠀⠀⠀⡀⠀⡜⠁⠀⠀⠀⠀⠀⠘⣸⠤⣏⠀⠸⡇⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀
+⠄⠀⠀⠀⠀⠀⠄⠈⠀⠀⠀⠀⡤⢫⠒⢤⢸⠄⠁⠀⠀⠀⠀⠀⠈⣦⣿⠏⠀⠀⣰⠿⠿⣴⣤⠌⠃⡎⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⡇⡠⠲⢽⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢀⠀⠀⠈⠀⠀⠀⠀⠐⠀⢀⣬⣀⠀⡾⠀⡄⠀⠀⠀⠀⠀⠀⠀⢸⠟⠀⢀⠜⠁⠀⠀⢻⣿⡆⢰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⡷⠀⣄⣁⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⣀⣈⣑⣎⣄⣇⠀⠀⠀⠀⠀⡀⠊⠀⢀⠔⠉⠀⠀⠀⠀⠈⣿⠗⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣠⣴⣚⣁⣀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡀⠄⠀⠀⠀⠀⠀⠀⠀⠀⢠⡞⠁⠀⠀⠉⠻⣿⠀⠀⠀⠀⠀⠀⣇⠀⣧⠀⠀⠀⠀⠀⠀⠀⢸⡥⣌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠟⠉⠀⠀⠈⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠂⠀⠀⠀⠀⠀⠙⡄⠀⠀⠀⠀⠀⢸⠀⣇⠀⠀⠀⠁⠀⠀⠀⢸⡇⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠏⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠸⢱⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⢸⡇⡇⠀⠀⠀⠀⠀⠀⠀⢐⡇⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠀⢮⠗⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⡀⠀⠀⠀⠀⠀⠐⠀⠀⠈⠓⠂⠀⠀⢀⢤⡇⠘⣅⠀⠀⠀⠀⣸⡇⠁⠀⠀⠀⠀⠀⠀⠀⠀⢳⢡⠀⠀⠀⠀⠀⠀⠀⠀⢰⠋⣰⡦⡀⠀⠀⠘⠒⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⡙⡟⣵⠼⡀⠀⠀⠀⠘⠣⣼⡀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠀⠀⠀⠀⠂⠀⠀⢀⠇⢪⢟⣣⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠄⠐⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⡓⠃⢀⢽⡀⣀⡀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⢀⡯⡀⠈⠚⡘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠣⠤⢼⠕⠻⡼⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠸⢳⠟⠚⡣⠤⠔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠏⠀⠀⠈⠢⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠴⠋⠀⠀⠘⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀
+⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠩⡰⠀⠀⠀⠀⠈⠑⠒⠤⣤⠔⣟⠀⠀⠊⢙⠢⣤⠴⠒⠊⠀⠀⠀⠀⠀⢇⠕⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠭⠛⢗⣸⠄⣆⡸⠋⠏⠝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀
+⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠠⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠂⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀
+⠄⠂⠐⠀⠀⠀⠀⠀⠀⠀⡀⠂⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀
+</pre>
+
+</div>
+<sub></sub>
+
+</div>
