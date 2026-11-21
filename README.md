@@ -14,7 +14,7 @@
 
 <br>
 
-## 01 · About me
+## 01 · ⛧About me⛧
 
 i am currently pursuing a B.Tech in computer science and engineering. iam interested in how technology translates into real-world products, businesses, and solutions and have been also exploring product development, growth strategy, partnerships, and community building. 
 in short, iam a programmer with a fascination for how computers work. if you want to see what goes on in my pastime, please check my recent repositories. 
@@ -24,7 +24,7 @@ i'm particularly interested in opportunities across technology, product, growth,
 
 <br>
 
-## 02 · my repo galaxy
+## 02 · my repo galaxy .𖥔 ݁ ˖
 
 <img src="assets/galaxy.svg?v=20261121" alt="My repositories drawn as planets. Bigger planets have more commits, colors follow the main language." width="100%">
 
@@ -39,7 +39,7 @@ i'm particularly interested in opportunities across technology, product, growth,
 
 <br>
 
-## 03 · tech stack
+## 03 · my tech stack ⋆⋆✴︎˚｡⋆
 
 <img src="assets/constellations.svg?v=20261121" alt="My skills drawn as three constellations: frontend, backend and tools." width="100%">
 
