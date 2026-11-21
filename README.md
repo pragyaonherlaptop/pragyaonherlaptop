@@ -26,18 +26,22 @@ i'm particularly interested in opportunities across technology, product, growth,
 
 ## 02 · my repo galaxy
 
-<img src="assets/galaxy.svg?v=20260101" alt="My repositories drawn as planets. Bigger planets have more commits, colors follow the main language." width="100%">
+<img src="assets/galaxy.svg?v=20261121" alt="My repositories drawn as planets. Bigger planets have more commits, colors follow the main language." width="100%">
 
 <sub>planet size = commits this year · color = main language · little stars = commits · rebuilt every night</sub>
 
 <!-- PLANETS:START -->
+<sub>
+<a href="https://github.com/pragyaonherlaptop/first-repository-kinda-nervous"><b>first-repository-kinda-nervous</b></a> · 10 commits · CSS<br>
+<a href="https://github.com/pragyaonherlaptop/chesstrel"><b>chesstrel</b></a> · 2 commits
+</sub>
 <!-- PLANETS:END -->
 
 <br>
 
 ## 03 · tech stack
 
-<img src="assets/stack.svg?v=20260101" alt="My skills drawn as three constellations: frontend, backend and tools." width="100%">
+<img src="assets/stack.svg?v=20261121" alt="My skills drawn as three constellations: frontend, backend and tools." width="100%">
 
 <br>
 
