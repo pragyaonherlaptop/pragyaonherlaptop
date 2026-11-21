@@ -1,0 +1,37 @@
+name: galaxy
+
+on:
+  schedule:
+    - cron: "17 20 * * *" # every night, 20:17 UTC
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+  push:
+    paths:
+      - "scripts/**"
+      - "config/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build galaxy and stack images
+        run: node scripts/generate.mjs
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          # Uses your own token if you added one named GALAXY_TOKEN (needed only to count private repos).
+          GH_TOKEN: ${{ secrets.GALAXY_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "galaxy-bot"
+          git config user.email "galaxy-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "chore: update galaxy" && git push)
