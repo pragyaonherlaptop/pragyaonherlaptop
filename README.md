@@ -41,7 +41,7 @@ i'm particularly interested in opportunities across technology, product, growth,
 
 ## 03 · tech stack
 
-<img src="assets/stack.svg?v=20261121" alt="My skills drawn as three constellations: frontend, backend and tools." width="100%">
+<img src="assets/constellations.svg?v=20261121" alt="My skills drawn as three constellations: frontend, backend and tools." width="100%">
 
 <br>
 
