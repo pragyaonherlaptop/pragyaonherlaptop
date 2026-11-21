@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="330" viewBox="0 0 854 330" role="img" aria-label="My skills drawn as three constellations: languages, web and data, tools and creative">
+  <title>Skills as constellations</title>
+ 
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .label { font-size: 12px; fill: #e6edf3; text-anchor: middle; }
+    .title { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .sub   { font-size: 10px; fill: #6e7681; text-anchor: middle; letter-spacing: 1px; }
+    .halo  { opacity: .16; }
+    .line  { fill: none; stroke-width: 1.2; stroke-opacity: .55; stroke-linejoin: round; }
+  </style>
+ 
+  <defs>
+    <!-- soft colored glow behind each constellation -->
+    <radialGradient id="glowBlue">
+      <stop offset="0" stop-color="#79b8ff" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#79b8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGreen">
+      <stop offset="0" stop-color="#7ee787" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#7ee787" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowOrange">
+      <stop offset="0" stop-color="#ffa657" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#ffa657" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+ 
+  <!-- background -->
+  <rect width="854" height="330" rx="10" fill="#0d1117" stroke="#30363d"/>
+ 
+  <ellipse cx="142" cy="135" rx="140" ry="110" fill="url(#glowBlue)"/>
+  <ellipse cx="427" cy="150" rx="140" ry="125" fill="url(#glowGreen)"/>
+  <ellipse cx="712" cy="150" rx="140" ry="125" fill="url(#glowOrange)"/>
+ 
+  <!-- tiny background stars -->
+  <g fill="#fff">
+    <circle cx="24"  cy="40"  r="1"   opacity=".6"/>
+    <circle cx="70"  cy="250" r="1.2" opacity=".5"/>
+    <circle cx="118" cy="40"  r="0.8" opacity=".7"/>
+    <circle cx="200" cy="225" r="1"   opacity=".4"/>
+    <circle cx="262" cy="60"  r="1.2" opacity=".6"/>
+    <circle cx="290" cy="270" r="0.9" opacity=".5"/>
+    <circle cx="330" cy="30"  r="1"   opacity=".7"/>
+    <circle cx="372" cy="215" r="0.8" opacity=".4"/>
+    <circle cx="520" cy="35"  r="1.1" opacity=".6"/>
+    <circle cx="548" cy="210" r="1"   opacity=".5"/>
+    <circle cx="575" cy="120" r="0.9" opacity=".6"/>
+    <circle cx="600" cy="280" r="1.2" opacity=".4"/>
+    <circle cx="610" cy="45"  r="1"   opacity=".7"/>
+    <circle cx="640" cy="215" r="0.8" opacity=".5"/>
+    <circle cx="820" cy="40"  r="1.1" opacity=".6"/>
+    <circle cx="832" cy="200" r="1"   opacity=".5"/>
+    <circle cx="820" cy="280" r="0.9" opacity=".6"/>
+    <circle cx="470" cy="290" r="1"   opacity=".4"/>
+    <circle cx="380" cy="100" r="0.8" opacity=".6"/>
+    <circle cx="40"  cy="300" r="1"   opacity=".4"/>
+  </g>
+ 
+  <!-- one shooting star, passes by every 11 seconds -->
+  <g opacity="0">
+    <path d="M0 0 L-60 -7" stroke="#fff" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/>
+    <circle r="2" fill="#fff"/>
+    <animateTransform attributeName="transform" type="translate" values="-80 30; 900 140; 900 140" keyTimes="0; .3; 1" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0; 1; 0; 0" keyTimes="0; .05; .3; 1" dur="11s" repeatCount="indefinite"/>
+  </g>
+ 
+ 
+  <!-- ============ LANGUAGES  (shaped like Cassiopeia, the "W") ============ -->
+  <g id="languages">
+    <polyline class="line" stroke="#79b8ff" points="52,170 97,100 142,160 190,95 236,150"/>
+ 
+    <circle class="halo" cx="52"  cy="170" r="11" fill="#79b8ff"/>
+    <circle cx="52"  cy="170" r="5" fill="#dcebff"/>
+    <text class="label" x="52"  y="194">C/C++</text>
+ 
+    <circle class="halo" cx="97"  cy="100" r="11" fill="#79b8ff"/>
+    <circle cx="97"  cy="100" r="5" fill="#dcebff"/>
+    <text class="label" x="97"  y="82">Python</text>
+ 
+    <circle class="halo" cx="142" cy="160" r="11" fill="#79b8ff"/>
+    <circle cx="142" cy="160" r="5" fill="#dcebff"/>
+    <text class="label" x="142" y="184">Java</text>
+ 
+    <circle class="halo" cx="190" cy="95"  r="11" fill="#79b8ff"/>
+    <circle cx="190" cy="95"  r="5" fill="#dcebff"/>
+    <text class="label" x="190" y="77">JavaScript</text>
+ 
+    <circle class="halo" cx="236" cy="150" r="11" fill="#79b8ff"/>
+    <circle cx="236" cy="150" r="5" fill="#dcebff"/>
+    <text class="label" x="236" y="174">TypeScript</text>
+ 
+    <text class="title" x="142" y="294" fill="#79b8ff">Languages</text>
+    <text class="sub"   x="142" y="311">CASSIOPEIA</text>
+  </g>
+ 
+ 
+  <!-- ============ WEB & DATA  (shaped like Cygnus, the Northern Cross) ============ -->
+  <g id="web-and-data">
+    <polyline class="line" stroke="#7ee787" points="427,68 427,140 427,245"/>
+    <polyline class="line" stroke="#7ee787" points="362,140 427,140 492,140"/>
+ 
+    <circle class="halo" cx="427" cy="68"  r="11" fill="#7ee787"/>
+    <circle cx="427" cy="68"  r="5" fill="#d6ffdc"/>
+    <text class="label" x="427" y="48">React</text>
+ 
+    <circle class="halo" cx="362" cy="140" r="11" fill="#7ee787"/>
+    <circle cx="362" cy="140" r="5" fill="#d6ffdc"/>
+    <text class="label" x="362" y="122">HTML5</text>
+ 
+    <circle class="halo" cx="492" cy="140" r="11" fill="#7ee787"/>
+    <circle cx="492" cy="140" r="5" fill="#d6ffdc"/>
+    <text class="label" x="492" y="122">CSS3</text>
+ 
+    <circle class="halo" cx="427" cy="140" r="13" fill="#7ee787"/>
+    <circle cx="427" cy="140" r="6.5" fill="#d6ffdc"/>
+    <text class="label" x="427" y="168">MySQL</text>
+ 
+    <circle class="halo" cx="427" cy="245" r="11" fill="#7ee787"/>
+    <circle cx="427" cy="245" r="5" fill="#d6ffdc"/>
+    <text class="label" x="427" y="269">PostgreSQL</text>
+ 
+    <text class="title" x="427" y="294" fill="#7ee787">Web &amp; Data</text>
+    <text class="sub"   x="427" y="311">CYGNUS</text>
+  </g>
+ 
+ 
+  <!-- ============ TOOLS & CREATIVE  (shaped like Orion) ============ -->
+  <g id="tools-and-creative">
+    <!-- shoulders down to the belt, then the belt, then the foot -->
+    <polyline class="line" stroke="#ffa657" points="655,70 665,150"/>
+    <polyline class="line" stroke="#ffa657" points="770,78 759,170"/>
+    <polyline class="line" stroke="#ffa657" points="665,150 712,160 759,170"/>
+    <polyline class="line" stroke="#ffa657" points="759,170 740,245"/>
+ 
+    <circle class="halo" cx="655" cy="70"  r="11" fill="#ffa657"/>
+    <circle cx="655" cy="70"  r="5" fill="#ffe6cc"/>
+    <text class="label" x="655" y="52">Git</text>
+ 
+    <circle class="halo" cx="770" cy="78"  r="11" fill="#ffa657"/>
+    <circle cx="770" cy="78"  r="5" fill="#ffe6cc"/>
+    <text class="label" x="770" y="60">GitHub</text>
+ 
+    <circle class="halo" cx="665" cy="150" r="11" fill="#ffa657"/>
+    <circle cx="665" cy="150" r="5" fill="#ffe6cc"/>
+    <text class="label" x="665" y="174">VS Code</text>
+ 
+    <circle class="halo" cx="712" cy="160" r="11" fill="#ffa657"/>
+    <circle cx="712" cy="160" r="5" fill="#ffe6cc"/>
+    <text class="label" x="712" y="142">Figma</text>
+ 
+    <circle class="halo" cx="759" cy="170" r="11" fill="#ffa657"/>
+    <circle cx="759" cy="170" r="5" fill="#ffe6cc"/>
+    <text class="label" x="759" y="194">Drawing</text>
+ 
+    <circle class="halo" cx="740" cy="245" r="13" fill="#ffa657"/>
+    <circle cx="740" cy="245" r="6.5" fill="#ffe6cc"/>
+    <text class="label" x="740" y="269">Creative Writing</text>
+ 
+    <text class="title" x="712" y="294" fill="#ffa657">Tools &amp; Creative</text>
+    <text class="sub"   x="712" y="311">ORION</text>
+  </g>
+</svg>
+ 
