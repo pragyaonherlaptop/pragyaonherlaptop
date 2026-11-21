@@ -32,8 +32,8 @@ i'm particularly interested in opportunities across technology, product, growth,
 
 <!-- PLANETS:START -->
 <sub>
-<a href="https://github.com/pragyaonherlaptop/first-repository-kinda-nervous"><b>first-repository-kinda-nervous</b></a> · 10 commits · CSS<br>
-<a href="https://github.com/pragyaonherlaptop/chesstrel"><b>chesstrel</b></a> · 2 commits
+<a href="https://github.com/pragyaonherlaptop/chesstrel"><b>chesstrel</b></a> · 37 commits · C++<br>
+<a href="https://github.com/pragyaonherlaptop/first-repository-kinda-nervous"><b>first-repository-kinda-nervous</b></a> · 10 commits · CSS
 </sub>
 <!-- PLANETS:END -->
 
