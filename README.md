@@ -27,9 +27,9 @@ i'm particularly interested in opportunities across technology, product, growth,
 ## 02 · my repo galaxy .𖥔 ݁ ˖
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/galaxy.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/galaxy-light.svg">
-  <img src="assets/galaxy.svg" alt="My repositories drawn as planets" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/galaxy.svg?v=20261122">
+  <source media="(prefers-color-scheme: light)" srcset="assets/galaxy-light.svg?v=20261122">
+  <img src="assets/galaxy.svg?v=20261122" alt="My repositories drawn as planets" width="100%">
 </picture>
 
 <sub>planet size = commits this year · color = main language · little stars = commits · rebuilt every night</sub>
@@ -37,7 +37,7 @@ i'm particularly interested in opportunities across technology, product, growth,
 <!-- PLANETS:START -->
 <sub>
 <a href="https://github.com/pragyaonherlaptop/chesstrel"><b>chesstrel</b></a> · 37 commits · C++<br>
-<a href="https://github.com/pragyaonherlaptop/first-repository-kinda-nervous"><b>first-repository-kinda-nervous</b></a> · 10 commits · CSS
+<a href="https://github.com/pragyaonherlaptop/hananinatte"><b>hananinatte</b></a> · 24 commits · C
 </sub>
 <!-- PLANETS:END -->
 
