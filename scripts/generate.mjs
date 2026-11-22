@@ -19,12 +19,37 @@ const MAX_PLANETS = 8;
 const W = 854;
 const H = 440;
 const FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace";
-const BG = '#0d1117';
-const BORDER = '#30363d';
-const TEXT = '#e6edf3';
-const MUTED = '#9da7b3';
+// Two looks: one for GitHub's dark theme, one for its light theme.
+// `T` is whichever look is being drawn right now (see the bottom of the file).
+const THEMES = {
+  dark: {
+    bg: '#0d1117',
+    border: '#30363d',
+    text: '#e6edf3',
+    muted: '#9da7b3',
+    star: '#ffffff',
+    glow: 0.28,
+    shade: [0, 0.1, 0.6, 0.92],
+    rim: 0.2,
+    orbit: (c) => lighten(c, 0.7),
+    ring: (c, t) => lighten(c, t),
+  },
+  light: {
+    bg: '#ffffff',
+    border: '#d0d7de',
+    text: '#1f2328',
+    muted: '#656d76',
+    star: '#8c959f',
+    glow: 0.18,
+    shade: [0, 0.06, 0.4, 0.68],
+    rim: 0,
+    orbit: (c) => darken(c, 0.1),
+    ring: (c, t) => darken(c, Math.max(0, 0.3 - t * 0.5)),
+  },
+};
+let T = THEMES.dark;
 
-/*small helpers*/
+/* ---------- small helpers ---------- */
 
 function rng(seed) {
   let a = seed >>> 0;
@@ -68,7 +93,7 @@ function luminance(hex) {
 }
 const FALLBACK_COLORS = ['#e0a05a', '#5cc7e6', '#b392f0', '#7ee787', '#f08aa8', '#e8c33c', '#79b8ff'];
 
-/* data */
+/* ---------- data ---------- */
 
 async function fetchData() {
   if (MOCK) {
@@ -120,7 +145,7 @@ async function fetchData() {
   return { total: c.contributionCalendar.totalContributions, repos };
 }
 
-/* planets*/
+/* ---------- planets ---------- */
 
 function prepare(repos) {
   const top = [...repos].sort((a, b) => b.commits - a.commits).slice(0, MAX_PLANETS);
@@ -229,7 +254,7 @@ function planetSVG(p, i) {
   // lighting, glow and atmosphere
   const lit =
     `<circle cx="${x}" cy="${y}" r="${r}" fill="url(#shade)"/>` + `<circle cx="${x}" cy="${y}" r="${r}" fill="url(#rim)"/>`;
-  const glow = `<circle cx="${x}" cy="${y}" r="${r * 1.08}" fill="${color}" opacity="0.28" filter="url(#blur)"/>`;
+  const glow = `<circle cx="${x}" cy="${y}" r="${r * 1.08}" fill="${color}" opacity="${T.glow}" filter="url(#blur)"/>`;
 
   // rings: back half behind the planet, front half over it
   let ringBack = '';
@@ -238,9 +263,9 @@ function planetSVG(p, i) {
     const tilt = Math.round(rnd() * 30 - 15);
     defs += `<clipPath id="${id}b"><rect x="${x - r * 3}" y="${y - r * 3}" width="${r * 6}" height="${r * 3}"/></clipPath><clipPath id="${id}t"><rect x="${x - r * 3}" y="${y}" width="${r * 6}" height="${r * 3}"/></clipPath>`;
     const bands = [
-      [1.5, 0.07, lighten(color, 0.35), 0.5],
-      [1.72, 0.13, lighten(color, 0.6), 0.75],
-      [2.0, 0.05, color, 0.55],
+      [1.5, 0.07, T.ring(color, 0.35), 0.5],
+      [1.72, 0.13, T.ring(color, 0.6), 0.75],
+      [2.0, 0.05, T.ring(color, 0), 0.55],
     ];
     const ring = (clip, k) =>
       `<g transform="rotate(${tilt} ${x} ${y})" fill="none"><g clip-path="url(#${id}${clip})">` +
@@ -259,7 +284,7 @@ function planetSVG(p, i) {
     const ang = rnd() * Math.PI * 2;
     const d = (p.ring ? r * 2.2 : r * 1.3) + rnd() * r * 0.4 + 6;
     const sr = (0.9 + rnd() * 1.1).toFixed(1);
-    orbit += `<circle cx="${(x + Math.cos(ang) * d).toFixed(1)}" cy="${(y + Math.sin(ang) * d).toFixed(1)}" r="${sr}" fill="${lighten(color, 0.7)}"/>`;
+    orbit += `<circle cx="${(x + Math.cos(ang) * d).toFixed(1)}" cy="${(y + Math.sin(ang) * d).toFixed(1)}" r="${sr}" fill="${T.orbit(color)}"/>`;
   }
   const spin = (dur, extra) =>
     `<g>${extra}<animateTransform attributeName="transform" type="rotate" from="0 ${x} ${y}" to="360 ${x} ${y}" dur="${dur}s" repeatCount="indefinite"/></g>`;
@@ -274,8 +299,8 @@ function planetSVG(p, i) {
 
   const labelY = y + r + 18;
   const label =
-    `<text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="middle" font-family="${FONT}" font-size="13" fill="${TEXT}">${esc(p.name)}</text>` +
-    `<text x="${x.toFixed(1)}" y="${(labelY + 15).toFixed(1)}" text-anchor="middle" font-family="${FONT}" font-size="11" fill="${MUTED}">${p.commits} commits${p.language ? ' · ' + esc(p.language) : ''}</text>`;
+    `<text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="middle" font-family="${FONT}" font-size="13" fill="${T.text}">${esc(p.name)}</text>` +
+    `<text x="${x.toFixed(1)}" y="${(labelY + 15).toFixed(1)}" text-anchor="middle" font-family="${FONT}" font-size="11" fill="${T.muted}">${p.commits} commits${p.language ? ' · ' + esc(p.language) : ''}</text>`;
 
   return `<defs>${defs}</defs>${glow}${ringBack}${body}${lit}${ringFront}${spin(90 + (i % 3) * 25, orbit)}${moon}${label}`;
 }
@@ -289,32 +314,32 @@ function galaxySVG(planets, total, date) {
     const y = (rnd() * H).toFixed(1);
     const r = (0.5 + rnd() * 1.1).toFixed(1);
     if (rnd() < 0.22) {
-      stars += `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff"><animate attributeName="opacity" values="1;0.2;1" dur="${(2 + rnd() * 4).toFixed(1)}s" begin="${(rnd() * 4).toFixed(1)}s" repeatCount="indefinite"/></circle>`;
+      stars += `<circle cx="${x}" cy="${y}" r="${r}" fill="${T.star}"><animate attributeName="opacity" values="1;0.2;1" dur="${(2 + rnd() * 4).toFixed(1)}s" begin="${(rnd() * 4).toFixed(1)}s" repeatCount="indefinite"/></circle>`;
     } else {
-      stars += `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff" opacity="${(0.35 + rnd() * 0.65).toFixed(2)}"/>`;
+      stars += `<circle cx="${x}" cy="${y}" r="${r}" fill="${T.star}" opacity="${(0.35 + rnd() * 0.65).toFixed(2)}"/>`;
     }
   }
   const common = `<defs>
 <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter>
 <filter id="blurS" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
-<radialGradient id="shade" cx="30%" cy="28%" r="82%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="0.45" stop-color="#000" stop-opacity="0.1"/><stop offset="0.75" stop-color="#000" stop-opacity="0.6"/><stop offset="1" stop-color="#000" stop-opacity="0.92"/></radialGradient>
-<radialGradient id="rim" cx="50%" cy="50%" r="50%"><stop offset="0.82" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.2"/></radialGradient>
+<radialGradient id="shade" cx="30%" cy="28%" r="82%"><stop offset="0" stop-color="#000" stop-opacity="${T.shade[0]}"/><stop offset="0.45" stop-color="#000" stop-opacity="${T.shade[1]}"/><stop offset="0.75" stop-color="#000" stop-opacity="${T.shade[2]}"/><stop offset="1" stop-color="#000" stop-opacity="${T.shade[3]}"/></radialGradient>
+<radialGradient id="rim" cx="50%" cy="50%" r="50%"><stop offset="0.82" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="${T.rim}"/></radialGradient>
 </defs>`;
   const empty = planets.length
     ? ''
-    : `<text x="${W / 2}" y="${H / 2}" text-anchor="middle" font-family="${FONT}" font-size="14" fill="${MUTED}">no commits yet this year, the galaxy is waiting</text>`;
+    : `<text x="${W / 2}" y="${H / 2}" text-anchor="middle" font-family="${FONT}" font-size="14" fill="${T.muted}">no commits yet this year, the galaxy is waiting</text>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Repositories drawn as planets, sized by commit count">
-<rect width="${W}" height="${H}" rx="10" fill="${BG}" stroke="${BORDER}"/>
+<rect width="${W}" height="${H}" rx="10" fill="${T.bg}" stroke="${T.border}"/>
 ${common}
 ${stars}
 ${empty}
 ${planets.map(planetSVG).join('\n')}
-<text x="${W - 14}" y="${H - 12}" text-anchor="end" font-family="${FONT}" font-size="11" fill="${MUTED}">updated ${date}</text>
+<text x="${W - 14}" y="${H - 12}" text-anchor="end" font-family="${FONT}" font-size="11" fill="${T.muted}">updated ${date}</text>
 </svg>
 `;
 }
 
-/*tech stack constellations*/
+/* ---------- tech stack constellations ---------- */
 
 function stackSVG(config, date) {
   const SH = 330;
@@ -347,19 +372,19 @@ function stackSVG(config, date) {
       const big = i % 2 ? 5 : 6;
       out += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${big + 4}" fill="${g.color}" opacity="0.15"/>`;
       out += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${big}" fill="${lighten(g.color, 0.7)}"><animate attributeName="opacity" values="1;0.45;1" dur="${(2.5 + rnd() * 3).toFixed(1)}s" begin="${(rnd() * 3).toFixed(1)}s" repeatCount="indefinite"/></circle>`;
-      out += `<text x="${(p.x + (left ? -12 : 12)).toFixed(1)}" y="${(p.y + 4).toFixed(1)}" text-anchor="${left ? 'end' : 'start'}" font-family="${FONT}" font-size="12" fill="${TEXT}">${esc(p.name)}</text>`;
+      out += `<text x="${(p.x + (left ? -12 : 12)).toFixed(1)}" y="${(p.y + 4).toFixed(1)}" text-anchor="${left ? 'end' : 'start'}" font-family="${FONT}" font-size="12" fill="${T.text}">${esc(p.name)}</text>`;
     });
     out += `<text x="${cx.toFixed(1)}" y="${SH - 28}" text-anchor="middle" font-family="${FONT}" font-size="15" font-weight="700" fill="${g.color}">${esc(g.name)}</text>`;
   });
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${SH}" viewBox="0 0 ${W} ${SH}" role="img" aria-label="Skills drawn as constellations">
-<rect width="${W}" height="${SH}" rx="10" fill="${BG}" stroke="${BORDER}"/>
+<rect width="${W}" height="${SH}" rx="10" fill="${T.bg}" stroke="${T.border}"/>
 ${bg}
 ${out}
 </svg>
 `;
 }
 
-/*README refresh*/
+/* ---------- README refresh ---------- */
 
 function replaceBetween(text, tag, content, inline = false) {
   const re = new RegExp(`(<!-- ${tag}:START -->)[\\s\\S]*?(<!-- ${tag}:END -->)`);
@@ -379,17 +404,21 @@ function updateReadme(planets, date) {
   text = replaceBetween(text, 'PLANETS', `<sub>\n${list}\n</sub>`);
   text = replaceBetween(text, 'UPDATED', date, true);
   const stamp = date.replace(/-/g, '');
-  text = text.replace(/assets\/(galaxy|stack)\.svg(\?v=\d+)?/g, (m, n) => `assets/${n}.svg?v=${stamp}`);
+  text = text.replace(/assets\/(galaxy-light|galaxy|stack)\.svg(\?v=\d+)?/g, (m, n) => `assets/${n}.svg?v=${stamp}`);
   fs.writeFileSync(file, text);
 }
 
-/*run*/
+/* ---------- run ---------- */
 
 const { repos, total } = await fetchData();
 const planets = layout(prepare(repos));
 const date = new Date().toISOString().slice(0, 10);
 fs.mkdirSync(ASSETS, { recursive: true });
+T = THEMES.dark;
 fs.writeFileSync(path.join(ASSETS, 'galaxy.svg'), galaxySVG(planets, total, date));
+T = THEMES.light;
+fs.writeFileSync(path.join(ASSETS, 'galaxy-light.svg'), galaxySVG(planets, total, date));
+T = THEMES.dark;
 
 const skillsFile = path.join(ROOT, 'config', 'skills.json');
 if (fs.existsSync(skillsFile)) {
