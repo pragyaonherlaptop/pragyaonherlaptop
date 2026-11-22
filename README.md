@@ -26,7 +26,7 @@ i'm particularly interested in opportunities across technology, product, growth,
 
 ## 02 · my repo galaxy .𖥔 ݁ ˖
 
-<img src="assets/galaxy.svg?v=20261121" alt="My repositories drawn as planets. Bigger planets have more commits, colors follow the main language." width="100%">
+<img src="assets/galaxy.svg?v=20261122" alt="My repositories drawn as planets. Bigger planets have more commits, colors follow the main language." width="100%">
 
 <sub>planet size = commits this year · color = main language · little stars = commits · rebuilt every night</sub>
 
