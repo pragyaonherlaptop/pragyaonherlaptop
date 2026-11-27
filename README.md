@@ -27,9 +27,9 @@ i'm particularly interested in opportunities across technology, product, growth,
 ## 02 · my repo galaxy .𖥔 ݁ ˖
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/galaxy.svg?v=20261126">
-  <source media="(prefers-color-scheme: light)" srcset="assets/galaxy-light.svg?v=20261126">
-  <img src="assets/galaxy.svg?v=20261126" alt="My repositories drawn as planets" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/galaxy.svg?v=20261127">
+  <source media="(prefers-color-scheme: light)" srcset="assets/galaxy-light.svg?v=20261127">
+  <img src="assets/galaxy.svg?v=20261127" alt="My repositories drawn as planets" width="100%">
 </picture>
 
 <sub>planet size = commits this year · color = main language · little stars = commits · rebuilt every night</sub>
@@ -38,7 +38,7 @@ i'm particularly interested in opportunities across technology, product, growth,
 <sub>
 <a href="https://github.com/pragyaonherlaptop/chesstrel"><b>chesstrel</b></a> · 37 commits · C++<br>
 <a href="https://github.com/pragyaonherlaptop/hananinatte"><b>hananinatte</b></a> · 24 commits · C<br>
-<a href="https://github.com/pragyaonherlaptop/everytime-clock"><b>everytime-clock</b></a> · 9 commits · JavaScript<br>
+<a href="https://github.com/pragyaonherlaptop/everytime-clock"><b>everytime-clock</b></a> · 12 commits · JavaScript<br>
 <a href="https://github.com/pragyaonherlaptop/galaxiousa"><b>galaxiousa</b></a> · 8 commits · CSS
 </sub>
 <!-- PLANETS:END -->
